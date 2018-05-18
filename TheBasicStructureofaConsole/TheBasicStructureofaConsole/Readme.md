@@ -35,3 +35,19 @@ static int Main()
 return 0;
 }
 ````
+The main method may also be defined as public as opposed to private,if do not supply a 
+specific access modifier.Vs automatically defines a progrm's main as private.
+
+**we will cover the access later **
+
+## New features 
+With the realease of c# 7.1 the Main() methods can be asychronous 
+```Csharp
+static Task Main()
+static Task<int> Main()
+static Task Main(string[])
+static Task<int> Main(string[])
+```
+## return Value 
+By convection returning a ZEro (0) indicates that the program terminate succefully , while other value (such as 1) representes 
+an error conditon(if do not specify the return value the value zero is returned by default.)
