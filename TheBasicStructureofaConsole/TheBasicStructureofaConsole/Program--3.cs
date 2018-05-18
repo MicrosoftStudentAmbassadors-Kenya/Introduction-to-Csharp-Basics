@@ -20,7 +20,7 @@ namespace TheBasicStructureofaConsole
             
             //Console.ReadLine() reads the String from the console
             Console.WriteLine($"Your name is  {Console.ReadLine()}",Console.BackgroundColor=ConsoleColor.Yellow);
-
+            Console.ForegroundColor = ConsoleColor.White;
             //Prints out the text to the console
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Enter your Course");
@@ -29,27 +29,15 @@ namespace TheBasicStructureofaConsole
 
             //observe the behaviour of the Console.Write method
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("Please Enter Your Age");
-            Console.Write($"Your age is {Console.ReadLine()}");
+            Console.WriteLine("Please Enter Your Age :");
+            Console.Write($"  Your age is {Console.ReadLine()}");
 
-            Console.WriteLine("Please Enter your name");
+            Console.WriteLine("Thanks for Choosing C# !!! Your are part of a great community!!");
 
             Console.WriteLine(Console.ReadLine());
             Console.ReadKey();
             return 0;
         }
-        /*
-        //no parameters and a return type
-        static void Main()
-        {
-
-        }
-
-        //int return type, no parameters
-        static int Main()
-        {
-            return 0;
-        }
-        */
+       
     }
 }
