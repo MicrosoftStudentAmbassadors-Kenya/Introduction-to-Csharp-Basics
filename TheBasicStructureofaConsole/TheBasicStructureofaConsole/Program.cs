@@ -15,11 +15,22 @@ namespace TheBasicStructureofaConsole
             Console.WriteLine("****This is my First C# application");
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ForegroundColor=
-            Console.WriteLine("Please Enter your Name");
+          //  Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Please Enter your Name",Console.ForegroundColor=ConsoleColor.DarkBlue);
+            
+            //Console.ReadLine() reads the String from the console
+            Console.WriteLine($"Your name is  {Console.ReadLine()}",Console.BackgroundColor=ConsoleColor.Yellow);
 
+            //Prints out the text to the console
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("Enter your Course");
+            Console.WriteLine($"You are Pursuing { Console.ReadLine()}");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            //observe the behaviour of the Console.Write method
             Console.BackgroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Please Enter Your Age");
+            Console.Write($"Your age is {Console.ReadLine()}");
 
             Console.WriteLine("Please Enter your name");
 
