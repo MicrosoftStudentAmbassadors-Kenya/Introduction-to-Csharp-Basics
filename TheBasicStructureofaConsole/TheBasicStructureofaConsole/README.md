@@ -51,3 +51,33 @@ static Task<int> Main(string[])
 ## return Value 
 By convection returning a ZEro (0) indicates that the program terminate succefully , while other value (such as 1) representes 
 an error conditon(if do not specify the return value the value zero is returned by default.)
+
+### Explanation of a Basic C#  Console Application
+```Csharp
+using System;
+class Greetings
+{
+static void Main()
+{
+Console.WriteLine("Greetings!");
+}
+}
+```
+The void keyword is't a type; it indicate that a method does not return a value.For Main, you can replace
+void with int, meaning that the program has a return type.This number can be used by the command-line shell tools to 
+evalute the conditions under which the program ended.It is unique to each program and specific by you 
+
+The static modifier indicate that there is only ever one instance of a Greeting class that has the Main method
+it is the static instance members. This means that you can have many copies of a class or instance with their own method.
+
+since a program only need  a single Main method, static makes sense.A program that manages customets  might need a customer class
+and you would need multiple insances to represent each customer.
+
+Inside the Main method is a statement that prints words to the commandile line. The words enclosed in double
+quotes, are string .The string is passed to the Writeline method which write that belongs to a class  named console is a.
+The class Console class belong to the Systen namespace which why we are using the namespace using clause appears at the top of the file.
+ 
+ 
+ ## Namespace and Code Organisation 
+ There are various ways to organise code and the choic should be based on the stardard of your team and the 
+ nature of the project you'r building.One of the common way to organise code is with C# namespace feature.
