@@ -1,10 +1,9 @@
-﻿## The anatomy of a Simple C# Program
+﻿# The anatomy of a Simple C# Program
 A console application starts from the Main method.The main method is the entry point of a console 
 application.C# is a case sensitive therefore the keyword Main, (M) is always capitalized.
 ## The Main Method 
 Every executable files
-written in c# must contain a Main method that is used to signify the entry point of the application.The main method has 
-static keyword.In addition to the static method ,this Main() Method has a single parameters ,which happens to be an array of string().
+written in c# must contain a Main method that is used to signify the entry point of the application.The main method has static keyword. In addition to the static method ,this Main() Method has a single parameters ,which happens to be an array of string().
 Beign array means that the Method can contain a number incoming command-line arguments of strings.
 
 finally , this Main method has been set up using the void keyword,meaning you do not explicity define the return value using the return 
