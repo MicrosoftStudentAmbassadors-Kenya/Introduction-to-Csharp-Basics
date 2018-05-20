@@ -1,6 +1,12 @@
 #C# Operators
  An opertaor is a symbol thatperforms mathematical orlogical manipulations. C# support the following :
-####1.Arithmetic Operators
+####1.Assignment Operator
+The assignment operator assigns the value on the right side of the variable to the left side.
+e.g
+```Csharp
+int t=3;
+```
+####2.Arithmetic Operators
 These Allow you to perform arithmetic operations on numbers.
 They include:
 <li>Addition +</li>
@@ -29,4 +35,30 @@ e.g
 ```Csharp
 int x=(4+3)*2;
 ```
-The second case outputs 14 since the operations in the parentesis are performed first.
+The second case outputs 14 since the operations in the parenthesis are performed first.
+
+####3. Compound Assignment Operator
+C# also provides compound assignment operators thatpeform an operation and an assignment in one statement.
+e.g.
+```Csharp
+int x=31;
+x+=2;   //equivalent to x=x+2;
+x-=2;   //equivalent to x=x-2;
+```
+
+#### 4. Unary Operators
+Two common unary operators are used to increment ++ and decrement -- a number.
+e.g
+```Csharp
+int x = 3;
+int y = x++;
+```
+The value of y now becomes 4.
+The increament operator increases an integer's value by one.
+Similartly the decreament operator works in a similar way as the increament operator.
+In these unary operators we can have 2 forms namely:
+<li>Postfix  x++ </li>
+<li>Prefix  ++x </li>
+The prefix increaments the value then proceeds with the expression while the postfix evaluates the expression and then performs the increamentation.
+
+
