@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2--EfficiencyCode", "Effici
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingExpressionsandStatements", "CodingExpressionsandStatements\CodingExpressionsandStatements.csproj", "{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicIOandVariables", "..\..\..\..\RiderProjects\BasicIOandVariables\BasicIOandVariables\BasicIOandVariables.csproj", "{8A970306-DC7D-4EF3-B8D9-90E23F60B162}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

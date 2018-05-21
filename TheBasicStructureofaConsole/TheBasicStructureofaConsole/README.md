@@ -81,3 +81,23 @@ The class Console class belong to the Systen namespace which why we are using th
  ## Namespace and Code Organisation 
  There are various ways to organise code and the choic should be based on the stardard of your team and the 
  nature of the project you'r building.One of the common way to organise code is with C# namespace feature.
+ 
+ The System.Console class
+ -------------------------
+ The console class encapsulate inputs,outputs and error stream manipulation for console
+ based application.The ability to change the background and foreground colors and issue beep 
+ noises(in variety of frequency.
+ 
+ Member                                       Meaning go life
+ Beep()                    This method forces the console to emit a beep of specified frequecy
+ BackgroundColor           These properties set the background color fot the current output
+ ForegroundColor            They may be assigned any memeber of the console enumeration
+ BufferHeight/BufferWidth   controls the height/width of the console buffer area
+ Title                       Sets the title of the current console
+ WindowHeight                these controls the dimension of the console in relation to the established buffer
+ Clear()                     This methos clears the established buffer and the console display area.
+ 
+ Basic Input and Ouput with the Console
+ ---------------------------------------
+ The console class defines a set of method to capture the input and the output of the console app
+ all of which are static and therefore called by prefixing the name of the class (console) to the method name.
