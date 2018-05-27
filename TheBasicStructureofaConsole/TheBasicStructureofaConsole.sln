@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicIOandVariables", "..\.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0--BasicStructureofConsole", "0--BasicStructureofConsole\0--BasicStructureofConsole.csproj", "{BD348C90-93AB-4AAB-AD66-275C83172F1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4--Comments", "4--Comments\4--Comments.csproj", "{42DD1800-46F7-488B-8DAD-42C236F8B813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
