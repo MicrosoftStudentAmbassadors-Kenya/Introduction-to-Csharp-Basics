@@ -1,52 +1,44 @@
-﻿# The anatomy of a Simple C# Program
-A console application starts from the Main method.The main method is the entry point of a console 
-application.C# is a case sensitive therefore the keyword Main, (M) is always capitalized.
-## The Main Method 
-Every executable files
-written in c# must contain a Main method that is used to signify the entry point of the application.The main method has static keyword. In addition to the static method ,this Main() Method has a single parameters ,which happens to be an array of string().
-Beign array means that the Method can contain a number incoming command-line arguments of strings.
+﻿## What is C#
 
-finally , this Main method has been set up using the void keyword,meaning you do not explicity define the return value using the return 
-value before exiting the program.The logic of the application is within the main method.Here we Make use of the console class which is defined 
-within the System namespace.
-## The output Method
-Among its memeber is the static WriteLine() which take in string and the sends it to the output stream.
+C# as mension earlier is one of the languages you can use to create application that will run on the .NET CLR.It is an evolution of c++ and c programming languages and has been create by microsoft specifically to work with the .NET platform .The c# language has been desined to incoporate many of the best features from other languages while cleaning up their problems.
 
-## Variation of the Main Method
-By default visual studio will generate a Main() method that has a void return valur and an array of string
-type as the single input parameter.The main method can have many singnatures
+Developing applications using C# is simpler than using C++, because the language syntax is simpler. Still, C# is a powerful language, and there is little you mightwant to do in C++ that you can't do in C#. Having said that, those features of C#that parallel the more advanced features of C++, such as directly accessing and manipulating system memory.
 
-```Csharp
-// int return type, array of strings as the parameter.
-static int Main(string[] args)
-{
-// Must return a value before exiting!
-return 0;
-}
-// No return type, no parameters.
-static void Main()
-{
-}
-// int return type, no parameters.
-static int Main()
-{
-// Must return a value before exiting!
-return 0;
-}
-````
-The main method may also be defined as public as opposed to private,if do not supply a 
-specific access modifier.Vs automatically defines a progrm's main as private.
+***C# is just one of the languages available for .NET development, but it is certainly the best.*** It has the advantage of being the only language designed from the ground up for the .NET Framework and is the principal language used in versions of .NET that are ported to other operating systems. To keep languages such as the .NET version of Visual Basic as similar as possible to their predecessors yet compliant with the CLR, certain features of the .NET code library are not fully supported, or at least require unusual syntax.
 
-**we will cover the access later **
+Applications You Can Write with C#
+----------------------------------
+The .Net framework has no Restrictions on the type of applications that are possible.
 
-## New features 
-With the realease of c# 7.1 the Main() methods can be asychronous 
-```Csharp
-static Task Main()
-static Task<int> Main()
-static Task Main(string[])
-static Task<int> Main(string[])
-```
-## return Value 
-By convection returning a ZEro (0) indicates that the program terminate succefully , while other value (such as 1) representes 
-an error conditon(if do not specify the return value the value zero is returned by default.)
+**Desktop applications** — Applications, such as Microsoft Office, that have a
+familiar Windows look and feel about them. This is made simple by using the
+Windows Presentation Foundation (WPF) module of the .NET Framework,
+which is a library of controls (such as buttons, toolbars, menus, and so on) that
+you can use to build a Windows user interface (UI).
+
+**Windows Store applications** — Windows 8 introduced a new type of
+application, known as a Windows Store application. This type of application is
+designed primarily for touch devices, and it is usually run full-screen, with a
+minimum of clutter, and an emphasis on simplicity. You can create these
+applications in several ways, including using WPF.
+
+
+**Cloud/Web applications** — The .NET Framework includes a powerful
+system named ASP.NET, for generating web content dynamically, enabling
+personalization, security, and much more. Additionally, these applications can
+be hosted and accessed in the Cloud, for example on the Microsoft Azure
+platform.
+
+**Web APIs** — An ideal framework for building RESTful HTTP services that
+support a broad variety of clients, including mobile devices and browsers.
+WCF services — A way to create versatile distributed applications. Using
+WCF you can exchange virtually any data over local networks or the Internet,
+using the same simple syntax regardless of the language used to create a
+service or the system on which it resides.
+
+**Mobile application**- Xamarin framework which uses mono and dotnet to target all the available mobile application by building native application for android , ios and uwp. Using Xamarin form you can also be able to build a cross platform application using the same ui patterns and sharing the application code logic.
+
+
+
+
+
