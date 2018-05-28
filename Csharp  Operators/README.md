@@ -46,7 +46,8 @@ x+=2;   //equivalent to x=x+2;
 x-=2;   //equivalent to x=x-2;
 ```
 
-#### 4. Unary Operators
+#### 1. Unary Operators
+
 Two common unary operators are used to increment ++ and decrement -- a number.
 e.g
 ```Csharp
