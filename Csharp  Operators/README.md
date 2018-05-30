@@ -31,7 +31,9 @@ The division operand divides the first operand by the second. If both operands a
 Division by Zero is undefined and will crash your program.
 
 The modulus operator is known as the remainder operator because it returns the remainder if an integer division
-##### Operator precedence
+
+### Operator precedence
+
 Certain opertors ahave a higher recedence than others e.g the multiplication operator has ahigher precedence than the addition operator
 Consider:
 
@@ -39,6 +41,7 @@ Consider:
 int x=4+3*2;
 Console.WriteLine(x);
 ```
+
 In the above case the output is 10 because the progrm evaluates 3*2 first and then adds the result to 4.
 Parentesis can be used to alter the operator precedene
 e.g
@@ -86,9 +89,11 @@ The prefix increaments the value then proceeds with the expression while the pos
 They ae used to join multiple expressions and return true or false.
 E.g.
 
-* && AND opertor
-* || OR operator
-* ! NOT Operator
+| Operator      | Name
+| ------------- |:----
+| &&            | And
+|              | OR
+| !             | NOT
 
 For the && operator both operands must be true  for the entire expression to be true.
 The && can join muliple statements.
