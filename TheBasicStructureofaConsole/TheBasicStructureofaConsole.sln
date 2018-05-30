@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1--TheBasicStructureofaConsole", "TheBasicStructureofaConsole\1--TheBasicStructureofaConsole.csproj", "{B3359B92-B5A3-4783-B5FB-DA38B63D333E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1--ConsoleAppExample", "TheBasicStructureofaConsole\1--ConsoleAppExample.csproj", "{B3359B92-B5A3-4783-B5FB-DA38B63D333E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2--EfficiencyCode", "EfficiencyCode--2\2--EfficiencyCode.csproj", "{A560105F-245B-4186-8011-AADCA93BB2F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2--EfficiencyCode", "EfficiencyCode--2\2--EfficiencyCode.csproj", "{A560105F-245B-4186-8011-AADCA93BB2F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingExpressionsandStatements", "CodingExpressionsandStatements\CodingExpressionsandStatements.csproj", "{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3--DataTypeandVariables", "CodingExpressionsandStatements\3--DataTypeandVariables.csproj", "{3A2B9A96-EE1E-4A33-B911-3F3B6BC01B57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicIOandVariables", "..\..\..\..\RiderProjects\BasicIOandVariables\BasicIOandVariables\BasicIOandVariables.csproj", "{8A970306-DC7D-4EF3-B8D9-90E23F60B162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0--BasicStructureofConsole", "0--BasicStructureofConsole\0--BasicStructureofConsole.csproj", "{BD348C90-93AB-4AAB-AD66-275C83172F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4--Comments", "4--Comments\4--Comments.csproj", "{42DD1800-46F7-488B-8DAD-42C236F8B813}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A970306-DC7D-4EF3-B8D9-90E23F60B162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD348C90-93AB-4AAB-AD66-275C83172F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DD1800-46F7-488B-8DAD-42C236F8B813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
