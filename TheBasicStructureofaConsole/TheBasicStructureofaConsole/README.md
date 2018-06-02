@@ -80,7 +80,7 @@ quotes, are string .The string is passed to the Writeline method which write tha
 The class Console class belong to the Systen namespace which why we are using the namespace using clause appears at the top of the file.
  
  
- ## Namespace and Code Organisation 
+## Namespace and Code Organisation 
  There are various ways to organise code and the choic should be based on the stardard of your team and the 
  nature of the project you'r building.One of the common way to organise code is with C# namespace feature.
  
@@ -91,8 +91,8 @@ The class Console class belong to the Systen namespace which why we are using th
  noises(in variety of frequency.
  
  Member                                       Meaning go life
- Beep()                    This method forces the console to emit a beep of specified frequecy
- BackgroundColor           These properties set the background color fot the current output
+ Beep()                     This method forces the console to emit a beep of specified frequecy
+ BackgroundColor            These properties set the background color fot the current output
  ForegroundColor            They may be assigned any memeber of the console enumeration
  BufferHeight/BufferWidth   controls the height/width of the console buffer area
  Title                       Sets the title of the current console
