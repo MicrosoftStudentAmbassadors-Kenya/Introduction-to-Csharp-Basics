@@ -1,4 +1,4 @@
-﻿## What is C#
+﻿# What is C#
 
 C# as mensioned earlier is  `one of the languages` you can `use` to `create application` that will run on the `.NET CLR`.It is an evolution of c++ and c programming languages and has been create by microsoft specifically to work with the .NET platform .The c# language has been desined to `incoporate many of the best features` from other languages while `cleaning up their problems`.
 
@@ -8,6 +8,15 @@ C# is just `one of the languages available` for `.NET development`, but it is ce
 
 > # Applications You Can Write with C#
 ----------------------------------
+
+1. [Desktop applications](#desktop-applications)
+1. [Windows Store applications](#windows-store-applications)
+1. [Cloud/Web applications](#cloud/web-applications)
+1. [Web APIs](#web-aPIs)
+1. [Mobile application](#mobile-application)
+1. [Bot](#Bots)
+
+
 The .Net framework has no Restrictions on the type of applications that are possible.
 
 > ## Desktop applications
@@ -40,10 +49,10 @@ support a broad variety of clients, including mobile devices and browsers.
 using the same simple syntax regardless of the language used to create a
 service or the system on which it resides.
 
-> # Mobile application
+> ## Mobile application
  `Xamarin framework` which uses `mono` and `dotnet` to target all the available mobile application by building native application for `android` , `ios` and `uwp`. Using Xamarin form you can also be able to build a `cross platform application` using the `same ui patterns` and `sharing` the application code logic.
 
-
+> # Bot
 
 
 
