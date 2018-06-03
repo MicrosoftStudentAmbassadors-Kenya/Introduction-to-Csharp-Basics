@@ -50,3 +50,48 @@ Types conserning the character and strings.
 |bool                   |Boolean Values, true or false|
 |string                 |A sequence of Character      |
 
+There is no upperlimit on the amount of character making up a string because it cann use varying amounts of memory.
+
+Look at the code below.
+
+```Csharp
+static void Main(string[] args)
+{
+int myInteger;
+string myString;
+myInteger = 17;
+myString = "\"myInteger\" is";
+Console.WriteLine($"{myString} {myInteger}");
+Console.ReadKey();
+}
+```
+> How does the code works?
+The code perfoms three tasks:
+<li>It declare two variables</li>
+<li>It assigns values to those two variables</li>
+<li>It outputs the values of the two variable to the console </li>
+
+Variable declarations occurs in the following codes.
+ ```Csharp
+int myInterger;
+string myString;
+ ```
+ The first line declares a variables of type int with a name of `myInterger`, and the second line declares a variable of type `string` called `myString`.
+
+ The next two lines of code assign values:
+```Csharp
+myInteger = 17;
+myString = "\"myInteger\" is";
+```
+Here you assign fixed values (known as `literals` values in code) to your variable using the =``assignement operator`.You assign the interger value 17 to myInterger and you assigned the following strings (including quates) to myString .
+
+When you assign string literal values in this way, `double quotation` marks are
+required to `enclose the string`.
+
+double quotation
+characters, and you must escape some characters by substituting a sequence
+of other characters (an `escape sequence`) that represents the character(`s`) you
+want to use. In this example, you use the sequence` \"` to `escape a double quotation mark`:
+```Csharp
+myString = "\"myInteger\" is";
+```
