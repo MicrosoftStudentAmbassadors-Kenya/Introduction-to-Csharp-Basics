@@ -95,3 +95,19 @@ want to use. In this example, you use the sequence` \"` to `escape a double quot
 ```Csharp
 myString = "\"myInteger\" is";
 ```
+If you didn't use these `escape sequences` and tried coding this as follows, you would get a `compiler error`:
+```Charp
+//produces a compiler error since the escape sequence 
+//not used in the code
+myString = ""myInteger" is";
+```
+The line `Console.WriteLine($"{myString} {myInteger}");`
+This a C# 6 feature called `String Interpolation` .The method introduce a space to the code you are printing out and prints the line in one line.
+
+lastly, The line `Console.ReadLine();` Waits for a key press before terminating the console program.
+
+> Variable Naming
+The basic variable naming rules are as follows:
+<li>The first character of a variable name must be either be a letter, an underscore character(_) or the @ symbol</li>
+<li>Character may be letter, underscore characters or numbers</li>
+
