@@ -106,8 +106,10 @@ This a C# 6 feature called `String Interpolation` .The method introduce a space 
 
 lastly, The line `Console.ReadLine();` Waits for a key press before terminating the console program.
 
-> Variable Naming
+># Variable Naming
 The basic variable naming rules are as follows:
 <li>The first character of a variable name must be either be a letter, an underscore character(_) or the @ symbol</li>
 <li>Character may be letter, underscore characters or numbers</li>
 
+>String Literals
+There are some escape sequence that can be used togeter with string literals.
