@@ -6,8 +6,10 @@ namespace _0__BasicStructureofConsole
     {
         /// <summary>
         /// rules of C# programming language
+        ///
         /// C# is case sensitive
         /// All statements must end with a semicolon
+        /// 
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
