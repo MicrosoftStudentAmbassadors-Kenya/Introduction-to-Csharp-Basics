@@ -97,7 +97,7 @@ myString = "\"myInteger\" is";
 ```
 If you didn't use these `escape sequences` and tried coding this as follows, you would get a `compiler error`:
 ```Charp
-//produces a compiler error since the escape sequence 
+//produces a compiler error since the escape sequence.
 //not used in the code
 myString = ""myInteger" is";
 ```
@@ -110,6 +110,57 @@ lastly, The line `Console.ReadLine();` Waits for a key press before terminating 
 The basic variable naming rules are as follows:
 <li>The first character of a variable name must be either be a letter, an underscore character(_) or the @ symbol</li>
 <li>Character may be letter, underscore characters or numbers</li>
+Example of some valid variables
+<li>MyBigVar</li>
+<li>Var1</li>
+<li>_test</li>
+
 
 >String Literals
 There are some escape sequence that can be used togeter with string literals.
+
+|Escape Sequence    |Character  Produced  |unicode Value   |
+|-------------------|---------------------|----------------|
+|\'                 |Single Quatation     |0X0027          |
+|\"                 |Double Quatation     |0X0022          |
+|\\                 |Backslash            |0X0027          |
+|\0                 |Null                 |0X0027          |
+|\a                 |Alert(causes a beep) |0X0027          |
+|\b                 |Backspace            |0X0027          |
+|\n                 |New line             |0X0027          |
+|\t                 |Horizontal Tabs      |0X0027          |
+|\v                 |Vertical Tabs        |0X0027          |
+
+One can use the `escape sequence` of the unicode to define and escape sequence.
+
+Examples
+```Csharp
+"Edwins\'s string."
+"Edwins\u0027s string."
+```
+>verbatim
+you could also specify a string verbatim.This means that all characters contained between two double quatation marks are included in the string, including end-of line characters and characters that would otherwise need escaping.The only exeption to this is is the escape sequence for the `double quatation mark character`,which must be specified to avoid ending the string.
+
+Example
+
+`@"Verbatism string literal."`
+You could also used string varbatim to write multiple line strings like
+```Csharp 
+  @"A short list :
+      item1
+      item2
+      item3
+      item4"
+```
+other wise you would be force to do a `string concatenation` to the above list.
+`verbatism` are particulary useful in filnames,as these use plenty of backslash characters.using normal strings, you'd have to use doubles slashes all the way along the string:
+ 
+```Csharp
+string path="C:\\Temp\\MyDir\\MyFile.doc"
+```
+But with string Verbatim string literal you can make this more readable by defining the string as follows
+```Csharp
+string path=@"c:\Temp\Mydir\myfile.doc"
+```
+
+>What is String ConCAtenation
