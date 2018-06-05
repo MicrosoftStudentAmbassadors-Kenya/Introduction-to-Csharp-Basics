@@ -54,3 +54,6 @@ var verbatismInterpolated =@"C:\Users\edd\source\repos\Introduction-to-Csharp-Ba
 WriteLine(stringWithescape);
 WriteLine(verbatismInterpolated);
 ```
+
+>please contribute by adding more relevate notes here and some example too..
+>if any problems is encountered. Feel free to ask Edd and Josh to help you our.Thanks 
