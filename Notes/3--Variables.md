@@ -24,9 +24,9 @@ examples of the interger types
 |byte                |Intergers between 0 and 255   |
 |short               |Intergers betwen -32768 and 32767|
 |ushort              |interges btwn 0 and 65535        |
-|int                 |intergers between -2147483648 and 2147483648
+|int                 |intergers between -2147483648 and 2147483648|
 |Long                |intergers btwn −9223372036854775808 and
-9223372036854775807
+9223372036854775807|
 |Ulong               |interges btwn 0 and 18446744073709551615
 
 The `u` character before some variables names are `shorthand` for unsigned , meaning that you can't store negative numbers in variable fo those type.
@@ -36,7 +36,7 @@ Your will also need to store floating-ponts values those that aren't whole numbe
        <li>double<li>
        <li>decimal<li>
 more type examples 
-     
+  
 |type                   |min value   | max value   |
 |-----------------------|------------|-------------|
 |float                  |0           |22 power 4   |
@@ -46,7 +46,7 @@ more type examples
 Types conserning the character and strings.
 |type                   |Allowed values             |
 |-----------------------|---------------------------|
-|char                   |single unicode character, stored as intergers between 0 and 65535
+|char                   |single unicode character, stored as intergers between 0 and 65535|
 |bool                   |Boolean Values, true or false|
 |string                 |A sequence of Character      |
 
