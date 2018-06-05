@@ -1,12 +1,10 @@
-﻿using System;
-using System.Diagnostics;
-using static System.Console;
+> # String interpolation
+To identify a string as an inteporated string we append it with the $ symbol.You can embend any 
+valid c# expressions that returns a value in and inteporated string.
 
-namespace SringInterpolationnEscapesequence
-{
-    class Program
-    {
-        static void Main(string[] args)
+Some Example
+```Csharp
+static void Main(string[] args)
         {
             //some valiable decalations
             double a, b;
@@ -19,10 +17,17 @@ namespace SringInterpolationnEscapesequence
             WriteLine($"the leght of the hypotenues of side {a} and {b}is given by :{Math.Sqrt(Math.Pow(a,2)+Math.Pow(b,2))}");
             WriteLine("Hello World!");
             WriteLine();
-            //Specifiying and interpolated expressions
+            ReadKey();
+        }
+```
+> #how to specify string interpolation in Expressions
+```Csharp
+static void Main(string[] args)
+        {
+            ...
             var date =new DateTime(1731,11,25);
             WriteLine($"on {date:yyyy MMMM dd} We started learning c# together");
             ReadKey();
         }
-    }
-}
+```
+
