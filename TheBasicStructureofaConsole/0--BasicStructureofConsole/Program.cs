@@ -6,6 +6,8 @@ namespace _0__BasicStructureofConsole
     {
         /// <summary>
         /// rules of C# programming language
+        /// C# is case sensitive
+        /// All statements must end with a semicolon
         ///
         /// C# is case sensitive
         /// All statements must end with a semicolon
