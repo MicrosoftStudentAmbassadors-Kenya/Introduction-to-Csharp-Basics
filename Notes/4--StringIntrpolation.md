@@ -30,4 +30,27 @@ static void Main(string[] args)
             ReadKey();
         }
 ```
+> ## How to control the withs alignment of the interpolated fields
+Example
+```Csharp
+ForegroundColor = ConsoleColor.Yellow;
+const int NamedAlignments = -9;
+const int ValueAlignments = 7;
+WriteLine($"three classical pyhtogoream means of {a} and {b}");
+WriteLine($"|{"Arithimetic",NamedAlignments}|{0.5 * (a+b),ValueAlignments}");
+WriteLine($"|{"Geometric",NamedAlignments}|{Math.Sqrt(a*b),ValueAlignments}");
+WriteLine($"|{"Harmonic",NamedAlignments}|{2/(1/a+1/b),ValueAlignments}");
+ReadKey();
+```
+>  ## Use Escape Sequence in an Interpolated string
 
+Interpolated strings supports all the escape sequence that can be used in ordinary string literals.To interpret escape sequence you can use the `verbatism` string literals.A verbatism interpolated string starts with the $ character followed by the @ character.
+
+Example
+```Csharp
+string username = "Jane";
+string stringWithescape ="C:\\Users\\edd\\source\\repos\\Introduction-to-Csharp-Basicd\\Notes\\4--StringIntrpolation.md";
+var verbatismInterpolated =@"C:\Users\edd\source\repos\Introduction-to-Csharp-Basicd\Notes\4--StringIntrpolation.md";
+WriteLine(stringWithescape);
+WriteLine(verbatismInterpolated);
+```
