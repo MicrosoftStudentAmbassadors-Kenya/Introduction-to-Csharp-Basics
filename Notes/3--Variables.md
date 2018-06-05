@@ -1,4 +1,4 @@
-># Variables and DataTypes in C#
+ ># Variables and DataTypes in C#
 
 Variables are conserned with the `storage of data`.You can think of varibles in computer memory as `boxes` sitting on a shelf.You can `put` things in boxes and `take them out` again or you can just look inside a box to see if anything is there. The same goes for variable; you `place data in them and can take it out or look at it, as required`.
 

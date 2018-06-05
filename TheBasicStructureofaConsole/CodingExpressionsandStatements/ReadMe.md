@@ -1,4 +1,5 @@
 ## DATA TYPES
+
 The variables in C#, are categorised into the following types
          .value Types
          .refence types
