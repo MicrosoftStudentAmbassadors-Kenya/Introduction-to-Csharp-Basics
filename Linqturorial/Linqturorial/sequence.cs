@@ -61,11 +61,13 @@ namespace Linqturorial
                 <ingredient name='salt' quantity='200' price='89.0'/>
                 <ingredient name='Powder' quantity='200' price='89.0'/>
                 <ingredient name='milk' quantity='200' price='89.0'/>
-                <ingredients>";
+                </ingredients>";
             XElement xmldata = XElement.Parse(xml);
             var xmlad = xmldata.Descendants("ingredient")
                 .First(x => x.Attribute("name").Value == "milk");
             Console.WriteLine(xmlad);
         }
+
+
     }
 }
