@@ -17,6 +17,8 @@ namespace Linqturorial
             sequenc.ImmediateExecutions();
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             sequenc.localQueries();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            sequenc.fluetSyntax();
 
             Console.ReadKey();
         }

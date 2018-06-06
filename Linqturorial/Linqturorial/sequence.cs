@@ -68,6 +68,37 @@ namespace Linqturorial
             Console.WriteLine(xmlad);
         }
 
+        public void fluetSyntax()
+        {
+             Ingredients[] ingredients ={
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "sugar", Calories = 500}
+            };
+            var highCaloriesIngredients =
+                ingredients.Where(x => x.Calories >= 150).OrderBy(x => x.Name).Select(x => x.Name);
+            Console.WriteLine("here is the list of the high calories with fluent methods");
+            foreach (var highCaloriesIngredient in highCaloriesIngredients)
+            {
+                
+                Console.WriteLine(highCaloriesIngredient);
+            }
+            Console.WriteLine("Here is the list of the high calories ingredients with Query syntax");
+
+            var highqueryingrdient = from caloriesIngredient in ingredients
+                where caloriesIngredient.Calories >= 150
+                orderby caloriesIngredient.Name
+                select caloriesIngredient.Name;
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            foreach (var caloriein in highqueryingrdient)
+            {
+                Console.WriteLine(caloriein);
+            }
+        }
 
     }
 }
