@@ -11,6 +11,11 @@ namespace Linqturorial
             string connectionstring = configuration.GetConnectionString("");
             var sequenc=new sequence();
             sequenc.startapp();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            sequenc.DefferedExecutions();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            sequenc.ImmediateExecutions();
+
 
             Console.ReadKey();
         }
