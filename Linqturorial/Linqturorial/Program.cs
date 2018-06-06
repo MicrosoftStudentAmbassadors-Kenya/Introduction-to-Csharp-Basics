@@ -9,6 +9,10 @@ namespace Linqturorial
         static void Main(string[] args)
         {
             string connectionstring = configuration.GetConnectionString("");
+            var sequenc=new sequence();
+            sequenc.startapp();
+
+            Console.ReadKey();
         }
     }
 }
