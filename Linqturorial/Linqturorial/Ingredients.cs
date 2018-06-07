@@ -9,6 +9,8 @@ namespace Linqturorial
         public string Name { get; set; }
         public int Calories { get; set; }
 
+       public override string ToString() =>  $"{Name} {Calories}";
+
     }
     
 }

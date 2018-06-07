@@ -31,6 +31,10 @@ namespace Linqturorial
             //Range variables 
             Console.ForegroundColor=ConsoleColor.Blue;
             sequence.RangeVariable();
+
+            ForegroundColor=ConsoleColor.DarkYellow;
+            System.Console.WriteLine("using the (let,from and select");
+            sequence.Dairyquery();
             
             ReadKey();
         }

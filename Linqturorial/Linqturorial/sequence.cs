@@ -10,6 +10,8 @@ namespace Linqturorial
     {
          int[] fibonacis;
          string xml;
+
+         string[] csvRecipes;
     Ingredients[] ingredients;
 
         public sequence()
@@ -31,6 +33,8 @@ namespace Linqturorial
                 new Ingredients() {Name = "Butter", Calories = 200}
             
             };
+            csvRecipes=new string[]{"milk","sugar","eggs","flour","Butter","Cheese","oats",};
+
         
         }
 
@@ -112,9 +116,32 @@ namespace Linqturorial
               System.Console.WriteLine(item);
             }
        
-            
+            Console.ForegroundColor=ConsoleColor.DarkMagenta;
+            var highCalorie2=from i in ingredients
+                             let highCalori=i.Calories>=150
+                             where highCalori
+                             select i;
+
+            foreach (var item in highCalorie2)
+            {
+                System.Console.WriteLine(item);
+            }
 
         }
-
+     public void Dairyquery(){
+         var dairyquery=from csvRecipe in csvRecipes
+                        let ingredients=csvRecipe.Split(',')
+                        from ingredient in ingredients
+                        let uppercaseIngrident=ingredient.ToUpper()
+                        where uppercaseIngrident=="MILK" ||
+                            uppercaseIngrident=="Butter"||
+                            uppercaseIngrident=="Cheese"
+                            select uppercaseIngrident;
+        foreach (var item in dairyquery)
+        {
+            System.Console.WriteLine(item);
+        }  
+                          
+     }
     }
 }
