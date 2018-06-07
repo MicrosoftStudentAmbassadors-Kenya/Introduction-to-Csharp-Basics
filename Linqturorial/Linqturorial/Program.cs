@@ -27,6 +27,10 @@ namespace Linqturorial
             WriteLine("This is awesome for visual studio code");
             sequence.fluetSyntax();
             WriteLine("l am testing the autosave feature and i will not save this line");
+
+            //Range variables 
+            Console.ForegroundColor=ConsoleColor.Blue;
+            sequence.RangeVariable();
             
             ReadKey();
         }

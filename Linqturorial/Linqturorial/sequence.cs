@@ -9,10 +9,28 @@ namespace Linqturorial
    public class sequence
     {
          int[] fibonacis;
+         string xml;
+    Ingredients[] ingredients;
 
         public sequence()
         {
             fibonacis = new[] {0, 1, 1, 2, 3, 5};
+              xml = @"
+                <ingredients>
+                <ingredient name='milk' quantity='200' price='89.0'/>
+                <ingredient name='sugar' quantity='1 kg' price='100.0'/>
+                <ingredient name='salt' quantity='1 kg' price='50.0'/>
+                <ingredient name='Powder' quantity='3 kg' price='150.0'/>
+                <ingredient name='milk' quantity='200' price='89.0'/>
+                </ingredients>";
+             ingredients =new Ingredients[]{
+                new Ingredients() {Name = "sugar", Calories = 500},
+                new Ingredients() {Name = "Egg", Calories = 100},
+                new Ingredients() {Name = "Milk", Calories = 150},
+                new Ingredients() {Name = "Flour", Calories = 50},
+                new Ingredients() {Name = "Butter", Calories = 200}
+            
+            };
         
         }
 
@@ -54,14 +72,7 @@ namespace Linqturorial
 
         public void localQueries()
         {
-            var xml = @"
-                <ingredients>
-                <ingredient name='milk' quantity='200' price='89.0'/>
-                <ingredient name='sugar' quantity='200' price='89.0'/>
-                <ingredient name='salt' quantity='200' price='89.0'/>
-                <ingredient name='Powder' quantity='200' price='89.0'/>
-                <ingredient name='milk' quantity='200' price='89.0'/>
-                </ingredients>";
+           
             XElement xmldata = XElement.Parse(xml);
             var xmlad = xmldata.Descendants("ingredient")
                 .First(x => x.Attribute("name").Value == "milk");
@@ -70,21 +81,12 @@ namespace Linqturorial
 
         public void fluetSyntax()
         {
-             Ingredients[] ingredients ={
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500},
-                new Ingredients() {Name = "sugar", Calories = 500}
-            };
+        
             var highCaloriesIngredients =
                 ingredients.Where(x => x.Calories >= 150).OrderBy(x => x.Name).Select(x => x.Name);
             Console.WriteLine("here is the list of the high calories with fluent methods");
             foreach (var highCaloriesIngredient in highCaloriesIngredients)
             {
-                
                 Console.WriteLine(highCaloriesIngredient);
             }
             Console.WriteLine("Here is the list of the high calories ingredients with Query syntax");
@@ -98,6 +100,20 @@ namespace Linqturorial
             {
                 Console.WriteLine(caloriein);
             }
+        }
+        public void RangeVariable(){
+            //similar to the variable used in a foreach statements
+            var highCalorie=from i in ingredients
+                            let isDairy=i.Name =="Milk" || i.Name=="Butter"
+                            where i.Calories>=150 && isDairy
+                            select i.Name;
+            foreach (var item in highCalorie)
+            {
+              System.Console.WriteLine(item);
+            }
+       
+            
+
         }
 
     }
