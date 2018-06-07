@@ -91,7 +91,7 @@ namespace Linqturorial
 
             var highqueryingrdient = from caloriesIngredient in ingredients
                 where caloriesIngredient.Calories >= 150
-                orderby caloriesIngredient.Name
+                orderby caloriesIngredient.Name 
                 select caloriesIngredient.Name;
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             foreach (var caloriein in highqueryingrdient)
