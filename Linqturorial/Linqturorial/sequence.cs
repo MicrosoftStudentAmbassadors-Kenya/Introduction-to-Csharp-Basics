@@ -142,6 +142,15 @@ namespace Linqturorial
             System.Console.WriteLine(item);
         }  
                           
+     }a
+     
+     
+     public void JoinClause(){
+         //the join clause takes two input sequence in which elements in eithe sequence do not necessarily have any direct 
+         //relationship in the class domain model
+         //when joins are being performed some first sequence is compare with other sequence  to perfoem what is callled Equal-joins
+         
+
      }
     }
 }
