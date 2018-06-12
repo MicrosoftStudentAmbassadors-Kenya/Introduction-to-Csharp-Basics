@@ -13,6 +13,9 @@ namespace Linqturorial
 
          string[] csvRecipes;
     Ingredients[] ingredients;
+      //Data for performing joint operations
+      Recipe[] recipes;
+       Review[] reviews ;
 
         public sequence()
         {
@@ -34,7 +37,12 @@ namespace Linqturorial
             
             };
             csvRecipes=new string[]{"milk","sugar","eggs","flour","Butter","Cheese","oats",};
-
+       recipes =new Recipe[] { new Recipe {Id = 1, Name = "Mashed Potato"}, new Recipe {Id = 2, Name = "Crispy Duck"}, 
+       new Recipe {Id = 3, Name = "Sachertorte"} };
+       
+        reviews =new Review[] { new Review {RecipeId = 1, ReviewText = "Tasty!"},
+        new Review {RecipeId = 1, ReviewText = "Not nice :("}, new Review {RecipeId = 1, ReviewText = "Pretty good"}, 
+        new Review {RecipeId = 2, ReviewText = "Too hard"}, new Review {RecipeId = 2, ReviewText = "Loved it"} };
         
         }
 
@@ -142,7 +150,7 @@ namespace Linqturorial
             System.Console.WriteLine(item);
         }  
                           
-     }a
+     }
      
      
      public void JoinClause(){
@@ -150,7 +158,36 @@ namespace Linqturorial
          //relationship in the class domain model
          //when joins are being performed some first sequence is compare with other sequence  to perfoem what is callled Equal-joins
          
+     var query=from recipe in recipes
+               join review in reviews on recipe.Id equals review.RecipeId
+               select new {
+                   RecipeName=recipe.Name,
+                   RecipeReview=review.ReviewText
+               };
+    foreach (var item in query)
+    {
+        System.Console.WriteLine($"{item.RecipeName}      {item.RecipeReview}");
+    }
 
+    //group join for the two sequence
+    var query2=from recipe in recipes
+                join review in reviews on recipe.Id equals review.RecipeId
+                into reviewGroup
+                select new {
+                    RecipeName=recipe.Name,
+                    Reviews=reviewGroup
+                };
+                 System.Console.WriteLine("Group join");
+                foreach (var item in query2)
+                {
+                    Console.ForegroundColor=ConsoleColor.Magenta;
+                    System.Console.WriteLine($"{item.RecipeName}");
+                    foreach (var item2 in item.Reviews)
+                    {
+                        Console.ForegroundColor=ConsoleColor.Red;
+                        System.Console.WriteLine(item2);
+                    }
+                }
      }
     }
 }

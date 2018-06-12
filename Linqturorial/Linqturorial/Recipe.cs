@@ -6,7 +6,9 @@ class Recipe{
 
 }
 class Review{
-    public int Recipeid { get; set; }   
+    public int RecipeId { get; set; }   
     public string ReviewText { get; set; }
+
+    public override string ToString()=>$"{ReviewText}";
 }
 }

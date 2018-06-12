@@ -35,7 +35,9 @@ namespace Linqturorial
             ForegroundColor=ConsoleColor.DarkYellow;
             System.Console.WriteLine("using the (let,from and select");
             sequence.Dairyquery();
-            
+
+            ForegroundColor=ConsoleColor.Green;
+            sequence.JoinClause();
             ReadKey();
         }
     }
