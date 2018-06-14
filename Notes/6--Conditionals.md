@@ -1,4 +1,4 @@
-## conditional statements 
+ ## conditional statements 
 Conditional statements in c# are two `if` , `if else` and the `switch case`.The conditional statements will be working withj
 conditions and in order to write conditions in c# we use the math operators and the comparison operators.
 
@@ -8,3 +8,5 @@ The comparison operators are used to compare pairs of intergers, floating point 
 | Operators                 |Action              |
 |---------------------------|---------------------|
 |    ==                     |Equal to             |
+|    !=                     |Not equal            |
+|    
