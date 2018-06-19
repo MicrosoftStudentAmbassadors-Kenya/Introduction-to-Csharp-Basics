@@ -1,15 +1,13 @@
 ﻿using System;
 
 namespace Switch
-{
-    class Program
+{ class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the day for today");
-            var input = Console.ReadLine();
+            var input = Console.ReadLine() ??"monday";
             input=input.ToLower();
-            DayOfWeek day = DayOfWeek.Friday;
+            DayOfWeek? day = DayOfWeek.Friday;
             if (input == "monday")
             {
                 day = DayOfWeek.Monday;
@@ -46,7 +44,7 @@ namespace Switch
                     break;
                 case DayOfWeek.Thursday:
                 Console.ForegroundColor=ConsoleColor.DarkMagenta;
-                    Console.WriteLine("today is on the fourth day of the week");
+                    Console.WriteLine($"today is on {input} the fourth day of the week");
                     break;
                 case DayOfWeek.Friday:
                 Console.ForegroundColor=ConsoleColor.Gray;

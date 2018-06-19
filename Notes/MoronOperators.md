@@ -35,4 +35,21 @@ If you were to write this code and there were no orders existing for the custome
 int count=customer.orders.Count();
 ```
 using the ?. operator result int the int? count being set to null instead of an exception happening.
+```csharp
+int? count=customer.orders.Count();
+```
+Combining the coalesicing operator ?? discussed in the previous section with the null condition operator? makes it possible to set a default value when the result is null.
+
+```csharp
+int count=customer.orders.Count() ?? 0;
+```
+Another use of the null condition operator is to event which we will see later in the course.
+
+```csharp
+var onChanged=Onchange;
+if(onchanged!=null){
+    onChanged(this,args);
+}
+```
+OnChanged?.Invoke(this ,args);
 
