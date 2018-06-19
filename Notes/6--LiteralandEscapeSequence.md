@@ -13,4 +13,18 @@ By default real number are of type Double.
 > # Real Literals - Example
 Here are some example of real literals' usage:
 
+> #Character  Literals
+Character literals are single characters enclose in apostrophe.(single quotes). We use them to set values of type chae .The value of a charater literals can be.
+<li>a character, for example `A`</li>
+<li>a character code, for example '\u0065`</li>
+<li>an excape sequence</li>
+
+Escape Sequences
+-----------------
+It  is nessessary to work with characters that are not displayed on the keyboard or with characters that cannot be represented site
+
+
+
+
+  
 
