@@ -44,5 +44,13 @@ The `HasValue` and `Value` readonly properties return true if the variable conta
 The `value` property returns `true` if the variable contains a value or `false` it its null.
 
 The value property returns a value if one is assigned.Otherwise a System.InvalidOperationExeption is thrown.
+
+The `default` value for `HasValue` is `false`.the `Value` property has no default value.
+
+Use the `??` operator to assign a default value that will be applied when a nullable type whose current value is null is assigned to a non-nullable type,for example `int? x=null ; int y=x??-1`;
+
+`Nested` nullable types are not allowed .The following line will not compile `Nullable<Nullable<int>> n`
+
+
     
 
