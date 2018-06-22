@@ -38,3 +38,11 @@ Nullable types have the following characteristics.
 <li>Assign a value to a nullable type just as you would for an ordinary value type,for Example int? x=10 or double? d=4.100. A nullable type can also be assigned the value null: int? x = null</li>
 <li>Use the Nullable<T>GetValueOrDefault method to return either the assigned value or the default value for the underlying type if the value is null for example int j=x.GetValueOrDefault():</li>
 <li>Use the HasValue and Value readonly properties to test for null and retrieve the value as shown int the following </li>
+ 
+The `HasValue` and `Value` readonly properties return true if the variable contains a value,of `false` if it is `null`.
+
+The `value` property returns `true` if the variable contains a value or `false` it its null.
+
+The value property returns a value if one is assigned.Otherwise a System.InvalidOperationExeption is thrown.
+    
+
