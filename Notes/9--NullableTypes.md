@@ -1,6 +1,6 @@
 > # Nullable Type (C# programming)
 Nullable types are instances of the `System.Nullable<T>` struct.A nullable type can represent the correct range of values for its underlying value type plus additional `null`.for Example a `Nullable<int32>` is called the `Nullable of Int32` can be assigned any value.
-A  `Nullable of bool ` can be assigned the following values.
+A  `Nullable of bool` can be assigned the following values.
 <li>true</li>
 <li>false</li>
 <li>null</li>
@@ -159,6 +159,14 @@ Nullable Booleans are like the Boolean variable type is used in sql .To ensure t
 
 `bool? operator&(bool? x ,bool? y)`
 `bool? operator|(bool? x ,bool? y)`
+
+> # Boxing Nullable Types
+objects based on nullable types are only boxed if the object is non-null.If `HasValue` is false,the object is assigned to null istead of boxing .ie
+```csharp
+bool? b=null;
+object o=b;
+//Now o is null
+```
 
 
     
