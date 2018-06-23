@@ -211,4 +211,22 @@ IConvertible ic = (IConvertible)iBoxed;
 int i = ic.ToInt32(null);
 string str = ic.ToString();
 ```
+> # Safely Cast from bool? to bool
+The `bool?` nullable type can contain three different values: `true , false , and null` . Therefore, the` bool?` type
+cannot be used in conditionals such as with `if , for , or while` . For example, the following code causes a `compiler error`.first check its `HasValue` property to ensure that its value is `not null` , and then cast it to `bool` .
+```Csharp
+bool? test = null;
+// Other code that may or may not
+// give a value to test.
+if(!test.HasValue) //check for a value
+{
+// Assume that IsInitialized
+// returns either true or false.
+test = IsInitialized();
+}
+if((bool)test) //now this cast is safe
+{
+// Do something.
+}
+```
 
