@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/moreSwichCase.csproj"
+                "${workspaceFolder}/7.1--moreonConditionalsSwitch.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
