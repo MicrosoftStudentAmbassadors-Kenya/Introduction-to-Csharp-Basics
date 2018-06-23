@@ -13,7 +13,7 @@
             "args": [],
             "cwd": "${workspaceRoot}",
             "stopAtEntry": false,
-            "console": "internalConsole"
+            "console":"externalTerminal"
         }
     ]
 }

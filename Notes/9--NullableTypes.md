@@ -51,6 +51,18 @@ Use the `??` operator to assign a default value that will be applied when a null
 
 `Nested` nullable types are not allowed .The following line will not compile `Nullable<Nullable<int>> n`
 
+> # Using Nullable Types
+Nullable types can be represent all the value of an underlying type and an addition null value.Nullable types are declared in two ways
+```csharp
+System.Nullable<T> variable
+
+      or 
+T? variable
+```
+T is the underlying type of the nullable type T can be any value including `struct` but is cannot be a reffence type.For example of when you might use a nullable type consider how an ordinary Boolean variable can have two values;`true of false` .There is no value that signifies  `Undefined` .In many orogramming application most notable database interactions ,variables can occur in an undefined state.For exampe, a field in a database may contain the value true or false but it may also contain no value at all.Similary,referenc types can be set to null to idicate that they are not initialised.
+
+This disparity can create extra proramming work with additional variables used to store information,the use of special values and so on.The nullable types modifiers enables c# to create value-type can be set to indicate and udefined value.
+
 
     
 
