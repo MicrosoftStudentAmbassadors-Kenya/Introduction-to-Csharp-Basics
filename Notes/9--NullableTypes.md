@@ -168,7 +168,47 @@ object o=b;
 //Now o is null
 ```
 if the object is non-null .if the `HasValue` is true --then boxing occurs, but only the underlying type that the nullable object is based on is boxed.Boxing a non-null type itself not the System.Nullable<T> that wraps the value type.ie,
+```Csharp
+bool? b = false;
+int? i = 44;
+object bBoxed = b; // bBoxed contains a boxed bool.
+object iBoxed = i; // iBoxed contains a boxed int.
+```
+The two boxed objects are identical to those created by boxing non-nullable types.And, just like non-nullable boxed types,they can be unboxed into nullable type in the following example.
 
+```Csharp
+bool? b2 = (bool?)bBoxed;
+int? i2 = (int?)iBoxed;
+```
+The two boxed objects are identica to those created by boxing non-nullable types and just like non-nullable boxed types they can unbox into nullabl types as in the following example.
 
-    
+```Csharp
+bool? b2=(bool?)bBoxed;
+int? i2=(int?)iBoxed;
+```
+> # Remarks
+The behaviour of nullable type when boxed provides two advantages:
+
+<li>Nullable objects and their boxs couterpart can be tested for null</li>
+
+```Csharp
+bool? b=null;
+object boxedb=b;
+if(b==null){
+    true
+}
+if(boxedb==null){
+    //also True
+}
+```
+<li>Boxed nullable types fully support the fuctionality of the undelying type</li>
+
+```Csharp
+double? d = 44.4;
+object iBoxed = d;
+// Access IConvertible interface implemented by double.
+IConvertible ic = (IConvertible)iBoxed;
+int i = ic.ToInt32(null);
+string str = ic.ToString();
+```
 
