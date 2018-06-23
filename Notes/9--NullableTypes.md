@@ -139,5 +139,27 @@ if (num1 == num2)
 Console.WriteLine("num1 == num2 returns true when the value of each is null");
 }
 ```
+> # The ?? Operator
+The ?? operators defines a default value that is retured when a nullable type is assigned to a nullable type.
+```csharp
+int? c =null;
+int d=c ?? -1;
+```
+This Operators can also be used with multiple nullabe types.For Example
+
+int? e=null;
+int? f=null;
+
+//g=e or f , unless e and f are both null,in which case g=-1
+
+> # The bool? type
+The bool? nullable type can contain three diffrent value;True false and null.
+
+Nullable Booleans are like the Boolean variable type is used in sql .To ensure that the result produced by the $ and ! operators are consistent with the three Boolean type in Sql;the following predifined operators are provided.
+
+`bool? operator&(bool? x ,bool? y)`
+`bool? operator|(bool? x ,bool? y)`
+
+
     
 
