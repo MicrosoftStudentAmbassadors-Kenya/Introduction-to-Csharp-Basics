@@ -93,6 +93,51 @@ A variable of nullable types can be set to null with the null data type keyword
 
 `int? n1 =null;`
 > # Operators
+The predefined `unary` and `binary` operators and any user-defined operators that exist for value type may also be used by nullable types.These Operators produce a null value if the operand are null; otherwise,the operators uses the contained value to calculate the result.For example
+```Csharp
+int? a=10;
+int? b=null;
+a++; //now increments by 1, now a is 11
+a=a*10;  //Multiply by 10, now a is 110
+a=a+b;//Add b now a is null
+```
+When you perform comparisons with nullable types, if the value of one of the nullable types is `null` and the `other is not`, all comparisons evaluate to `false` except for `!= (not equal)`. It is important not to assume that because a
+particular comparison returns false , the opposite case returns `true `. In the following example, 10 is `not greater than`, `less than`, `nor equal` to `null`. Only `num1 != num2` evaluates to true .
 
+```Csharp
+int? num1 = 10;
+int? num2 = null;
+if (num1 >= num2)
+{
+Console.WriteLine("num1 is greater than or equal to num2");
+}
+else
+{
+// This clause is selected, but num1 is not less than num2.
+Console.WriteLine("num1 >= num2 returned false (but num1 < num2 also is false)");
+}
+if (num1 < num2)
+{
+Console.WriteLine("num1 is less than num2");
+}
+else
+{
+// The else clause is selected again, but num1 is not greater than
+// or equal to num2.
+Console.WriteLine("num1 < num2 returned false (but num1 >= num2 also is false)");
+}
+if (num1 != num2)
+{
+// This comparison is true, num1 and num2 are not equal.
+Console.WriteLine("Finally, num1 != num2 returns true!");
+}
+// Change the value of num1, so that both num1 and num2 are null.
+num1 = null;
+if (num1 == num2)
+{
+// The equality comparison returns true when both operands are null.
+Console.WriteLine("num1 == num2 returns true when the value of each is null");
+}
+```
     
 
