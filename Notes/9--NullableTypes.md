@@ -63,6 +63,24 @@ T is the underlying type of the nullable type T can be any value including `stru
 
 This disparity can create extra proramming work with additional variables used to store information,the use of special values and so on.The nullable types modifiers enables c# to create value-type can be set to indicate and udefined value.
 
+> # Example of Nullablel Types
+Any value type may be the basic for Nullable.For example
+```Csharp
+int? i=10;
+double? di=3.14;
+bool? flag=null;
+char? letter='a';
+int?[] arr=new int?[10];
+```
+> # The Members of Nullable Types
+Each instance of nullable type has two public read-only propertis
+<li>HasValue is of type bool.It is set to true when the variable contains a non-null value</li>
+<li>Value</li>
+`Value` is of the same type as the undelying type .if HasValue is `true` Value contains a meannigful value.If `HasValue` is false,accesing Value will throw a `InvalidOperationException`
+
+In this example, the `HasValue` member is used to test whether the variable contains a value before it tries to displat it.
+
+
 
     
 
