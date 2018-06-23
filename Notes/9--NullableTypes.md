@@ -80,7 +80,19 @@ Each instance of nullable type has two public read-only propertis
 
 In this example, the `HasValue` member is used to test whether the variable contains a value before it tries to displat it.
 
+>  # Explicit Conversions
+A nullable type can be cast to a reqular type either explicitly with a cast of using the value Property.example
+```Csharp
+int? n=null;// will not compile 
+int m2=(int)n; //compiles, but will create an exception if n is null
+int m3=n.Value;//compile, but will not create an exeption when n is null
+```
 
+> # Impicit conversion
+A variable of nullable types can be set to null with the null data type keyword
+
+`int? n1 =null;`
+> # Operators
 
     
 

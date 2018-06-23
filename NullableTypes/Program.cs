@@ -36,6 +36,19 @@ namespace NullableTypes {
             else
             Console.WriteLine("undefined");
 
+           int? x=3;
+           int ex;
+
+           //a try block is used to catch Exeption thrown
+           try{
+              // ex=x; does not compile
+              ex=(int)x;
+           }catch(Exception e){
+               Console.WriteLine(e.Message + "the of the Explicit conversion of the nullable type to non-nullable");
+
+           }
+
+           Console.WriteLine($"Compile successsfully {x.Value}");
                 Console.ReadKey ();
         }
     }
