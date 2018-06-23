@@ -29,7 +29,18 @@ namespace moreSwichCase {
                     Console.WriteLine ("Hey guest");
                     break;
             }
-
+          //multiple check we use the when keyword
+          switch (username.ToLower()) {
+                case "Edd" when password.Equals("abcd12"):
+                    Console.WriteLine ("Hey Modelator!");
+                    break;
+                case "josh" when password.Equals("1234"):
+                    Console.WriteLine ("hey admin");
+                    break;
+                default:
+                    Console.WriteLine ("Hey guest");
+                    break;
+            }
             Console.ReadKey ();
 
         }
