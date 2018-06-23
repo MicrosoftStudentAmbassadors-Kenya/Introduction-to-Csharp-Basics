@@ -167,6 +167,7 @@ bool? b=null;
 object o=b;
 //Now o is null
 ```
+if the object is non-null .if the `HasValue` is true --then boxing occurs, but only the underlying type that the nullable object is based on is boxed.Boxing a non-null type itself not the System.Nullable<T> that wraps the value type.ie,
 
 
     
