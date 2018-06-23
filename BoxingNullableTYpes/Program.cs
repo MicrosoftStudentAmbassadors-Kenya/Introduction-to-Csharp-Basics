@@ -37,9 +37,20 @@ namespace BoxingNullableTYpes {
             IConvertible ic = (IConvertible) iBoxed;
             int ity = ic.ToInt32 (null);
             string str = ic.ToString ();
-            WriteLine (ity+" "+str);
+            WriteLine (ity + " " + str);
 
-            ReadKey ();
+            //To Identify the type of the nullable type use the GetType() property
+            int? ie = 5;
+            Type t = ie.GetType ();
+            Console.WriteLine (t.FullName); //"System.Int32"
+            /*The C# is operator also operates on a Nullable's underlying type. Therefore you cannot use is to determine
+whether a variable is a Nullable type. The following example shows that the is operator treats a Nullable<int>
+variable as an int.
+             */
+            if (ie is int) // true
+            Write("ie is  an interget");
+            
+                ReadKey ();
         }
     }
 }
