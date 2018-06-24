@@ -4,9 +4,9 @@ namespace SimpleCalculator {
     class Program {
 
         static void Main (string[] args) {
-            //Takes two inputs a and b 
+            // and infinite loop----a loop that does not end 
             for (;;) {
-
+                //Takes two inputs a and b 
                 string firstNum, secondNum;
 
                 //conversion parameters
@@ -87,7 +87,7 @@ namespace SimpleCalculator {
                 }
 
                 // to implement a switch you could use the format below
-             Console.WriteLine("The switch implementation below!!! enjoy");
+                Console.WriteLine ("The switch implementation below!!! enjoy");
                 switch (operation) {
                     case "add":
                     case "+":
