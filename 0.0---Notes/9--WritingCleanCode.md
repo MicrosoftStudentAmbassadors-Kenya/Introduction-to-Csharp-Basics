@@ -114,5 +114,15 @@ public class Customer{
 The `class` ,`public properties` and  `method` names are in `PascalCase`.
 The `private property` and `local variables` are  in camelCase. but the private property must be prefixed with and `underscore`.
 
+> # Poor Method Signatures
+```Csharp
+Orange GetCustomer(int airplane);
+void Parse(int command);    //> int Parse(string command)
+```
+# > Method Signatures
+<li>Check the Return type</li>
+<li>Check the method name</li>
+<li>Check the parameter names<li/>
+
 
 
