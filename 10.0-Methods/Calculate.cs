@@ -1,6 +1,6 @@
 ﻿namespace Calculate
 {
-    class Name
+    class CalculateEngine
     {
         
     }
