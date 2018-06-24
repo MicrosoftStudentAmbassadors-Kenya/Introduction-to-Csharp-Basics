@@ -86,6 +86,17 @@ namespace SimpleCalculator {
 
                 }
 
+                // to implement a switch you could use the format below
+                switch (operation) {
+                    case "add":
+                    case "+":
+                        Console.WriteLine ($"The addition of {convertedNum1} and {convertedNum2} is {convertedNum1+convertedNum2}");
+                        break;
+                    default:
+                        Console.WriteLine ($"out of the operation of our calculator");
+                        break;
+
+                }
             }
         }
     }
