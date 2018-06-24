@@ -1,0 +1,7 @@
+﻿namespace Calculate
+{
+    class Name
+    {
+        
+    }
+}
