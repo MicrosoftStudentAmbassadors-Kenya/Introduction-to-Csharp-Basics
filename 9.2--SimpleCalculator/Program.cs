@@ -87,6 +87,7 @@ namespace SimpleCalculator {
                 }
 
                 // to implement a switch you could use the format below
+             Console.WriteLine("The switch implementation below!!! enjoy");
                 switch (operation) {
                     case "add":
                     case "+":
