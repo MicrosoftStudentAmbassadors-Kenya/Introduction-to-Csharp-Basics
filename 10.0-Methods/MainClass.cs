@@ -9,7 +9,7 @@ namespace Calculate {
             while (true)
             {
                 string inputNum1,inputNum2;
-                double numOne, numTwo;
+                double numOne=0, numTwo=0;
 
                 bool isNumeric = false;
                 do
@@ -28,9 +28,14 @@ namespace Calculate {
                 {
                     isNumeric = true;
                     Console.WriteLine(e);
-                    throw new Exception("The number must be numeric");
+                    //throw new Exception("The number must be numeric");
                 }   
-                    
+                    Console.WriteLine ("What operation is required : add (+) ,subtract (-),Multiply (*),Modulus (%)? please indicate beloe");
+                    var operation = Console.ReadLine ();
+                    Console.Clear ();
+
+                    var calcuate = CalculateEngine.Calcuate(operation, numOne, numTwo);
+                    Console.WriteLine($"The {operation} of {numOne} and {numTwo} is {calcuate}");
                 } while (isNumeric);
                
 

@@ -4,7 +4,7 @@ namespace Calculate
 {
    public class CalculateEngine
     {
-        public double Calcuate(string operation, double firstNumber, double secondNumber)
+        public static double Calcuate(string operation, double firstNumber, double secondNumber)
         {
             double result;
             switch (operation)

@@ -12,7 +12,7 @@ namespace Calculate
             {
                 if (!double.TryParse(input, out convertedNum))
                 {
-                    throw new InvalidCastException("The number entered is not numeric");
+                    //throw new InvalidCastException("The number entered is not numeric");
                 }
             }
             catch (Exception e)
