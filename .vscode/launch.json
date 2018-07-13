@@ -4,16 +4,16 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceRoot}/bin/Debug/<target-framework>/<project-name.dll>",
-            "args": [],
-            "cwd": "${workspaceRoot}",
-            "stopAtEntry": false,
-            "console":"externalTerminal"
+            "type": "node",
+            "request": "attach",
+            "name": "Docker: Attach to Node",
+            "port": 9229,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "/usr/src/app",
+            "protocol": "inspector"
         }
     ]
 }
